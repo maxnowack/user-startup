@@ -4,6 +4,7 @@
   "description": "Automatically run commands when the user logs in (cross-platform)",
   "main": "lib/index.js",
   "scripts": {
+    "prepare": "npm run build",
     "test": "babel-node test && standard --fix",
     "build": "babel src --out-dir lib",
     "prepublish": "npm test && npm run build && pkg-ok",
